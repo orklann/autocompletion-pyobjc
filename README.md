@@ -8,6 +8,8 @@ Need to install `virtualenv` with `pip` before these steps
 ```
 virtualenv -p `which python3` autocomplete
 
+source example/bin/activate.fish # <= for Fish shell, activate.sh for Bash shell
+
 pip install pyobjc
 
 python3 main.py > autocomplete.py
