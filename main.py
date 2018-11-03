@@ -1,5 +1,7 @@
 import inspect
 import Cocoa
+import Quartz
+import Foundation
 
 lookup = dict()
 
@@ -18,4 +20,6 @@ def listClass(c):
             print(i)
             lookup.setdefault(i, True)
 
+listModule(Foundation)
 listModule(Cocoa)
+listModule(Quartz)
